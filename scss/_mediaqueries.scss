@@ -1,0 +1,19 @@
+/* --- Media Queries -- */
+@media screen and (min-width: 500px) {
+  .about,
+  .portfolio {
+    flex-flow: row nowrap;
+  }
+
+  .about-box__tile {
+    flex: 10%;
+  }
+  .about__content {
+    flex: 60%;
+  }
+
+  .portfolio__box:first-of-type {
+    order: 1;
+    flex: 10%;
+  }
+}
