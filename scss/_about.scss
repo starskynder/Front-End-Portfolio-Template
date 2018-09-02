@@ -1,0 +1,32 @@
+/* --- About --- */
+.about {
+  @include flex-row;
+
+  justify-content: stretch;
+  margin: 3em 0;
+
+  .title__tile:nth-of-type(odd) {
+    background-color: lighten($iron, 10);
+  }
+
+  .title__tile:nth-of-type(even) {
+    background-color: $oyster-pink;
+  }
+}
+
+.about__box {
+  margin: 1em;
+}
+
+.about__tile {
+  flex: 1;
+}
+
+.about__content {
+  background-color: lighten($iron, 10);
+  padding: 0.5em;
+
+  @include flex-col;
+
+  align-items: center;
+}
