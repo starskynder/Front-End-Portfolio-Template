@@ -1,0 +1,19 @@
+/* --- Header --- */
+header {
+  height: 100%;
+  font-family: "Miniver", cursive;
+  text-align: center;
+}
+
+.main-header {
+  height: 100%;
+  background-image: url(../images/programming.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
