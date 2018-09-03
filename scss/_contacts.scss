@@ -1,0 +1,50 @@
+/* --- Contacts --- */
+
+.contacts {
+  @include flex-row;
+
+  justify-content: stretch;
+  margin: 3em 0;
+
+  .title__tile:nth-of-type(odd) {
+    background-color: lighten($iron, 10);
+  }
+
+  .title__tile:nth-of-type(even) {
+    background-color: $oyster-pink;
+  }
+}
+
+.contacts__box {
+  margin: 1em;
+}
+
+.contacts__tile {
+  flex: 1;
+}
+
+.contacts__content {
+  background-color: lighten($iron, 10);
+  padding: 0.5em;
+
+  @include flex-row;
+
+  justify-content: center;
+  text-align: center;
+
+  p.contacts__txt {
+    width: 100%;
+  }
+}
+
+.contacts__icon {
+  font-size: 4em;
+  display: inline-block;
+  margin: 0.3em;
+  color: darken($oyster-pink, 20);
+
+  &:focus,
+  &:hover {
+    color: darken($color: $accent, $amount: 20);
+  }
+}

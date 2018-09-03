@@ -1,14 +1,21 @@
 /* --- Media Queries -- */
 @media screen and (min-width: 500px) {
+  main {
+    max-width: 80%;
+  }
+
   .about,
   .portfolio {
     flex-flow: row nowrap;
   }
 
-  .about-box__tile {
+  .about__tile,
+  .contacts__tile {
     flex: 10%;
   }
-  .about__content {
+
+  .about__content,
+  .contacts__content {
     flex: 60%;
   }
 
